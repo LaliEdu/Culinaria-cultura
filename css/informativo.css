@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box; /* Para incluir padding e border no cálculo da largura e altura */
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+  display: flex; /* Usando flexbox */
+  flex-direction: column; /* Coloca os itens em coluna */
+  min-height: 100vh; 
+}
+
+.container a{
+    color: #f5f5f5;
+}
+
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Cor de fundo geral */
+    color: #000000; /* Cor do texto geral */
+  }
+
+  
+  header {
+    background-color: #181313; /* Cor de fundo do cabeçalho */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgb(233, 229, 229); /* Sombra no cabeçalho */
+  }
+
+  .caixa {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(88, 84, 84, 0.425); /* Sombra leve */
+    padding: 60px; /* Ajuste o padding conforme necessário */
+    height: 300px; /* Defina uma altura fixa */
+    max-width: 600px;
+    margin: 70px auto; /* Centraliza a caixa na tela */
+    border: 2px solid #424040a2; /* Borda fina */
+    flex: 1; /* Faz com que ocupe o espaço restante */
+  }
+  
+  /* Estilos para o título */
+  .caixa h2 {
+    color: #333333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para a lista de ingredientes */
+  .caixa ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Estilos para o texto de modo de preparo */
+  .caixa p {
+    line-height: 1.6;
+    color: #f5f5f5;
+  }
+  
+  /* Estilos para o texto de destaque (negrito) */
+  .caixa strong {
+    font-weight: bold;
+    color: #333333;
+  }
+
+  /*Interatividade js*/
+  .rating {
+    direction: rtl; /* Inverte a direção para que a estrela mais à direita seja a mais alta */
+}
+
+.rating input {
+    display: none; /* Esconde os inputs de rádio */
+}
+
+.rating label {
+    font-size: 30px; /* Tamanho das estrelas */
+    color: #ccc; /* Cor padrão das estrelas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+
+.rating input:checked ~ label {
+    color: gold; /* Cor das estrelas selecionadas */
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+    color: gold; /* Cor das estrelas ao passar o mouse */
+}
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0 10px;
+    color: #ffffff;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  #sobreMim, #feedback, #inicio {
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff; /* Cor de fundo das seções */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0px 2px 5px rgba(92, 88, 92, 0.726); /* Sombra nas seções */
+  }
+  
+  h1{
+    color: #ffffff;
+  }
+  
+  h2 {
+    color: #0e0c0c; /* Cor dos títulos */
+  }
+  
+  footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 5px 0; /* Espaçamento interno */
+}
