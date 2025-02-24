@@ -39,12 +39,14 @@ footer {
   padding: 20px 0px; /* Ajuste do espaçamento interno */
   text-align: center;
   align-items: center;
+  background-color: #333; /* Cor de fundo do footer */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 0; /* Ajustei o padding para dar mais espaço */
+    width: 100%; /* Garante que o footer ocupe toda a largura da tela */
+    position: relative; /* Permite que o footer se comporte corretamente */
+    bottom: 0; /* Garante que o footer esteja na parte inferior da página */
 }
-
- .footer-content{
-  justify-content: space-between;
-  color: #dde0e3;
- }
 
 
 @media screen and (max-width: 1170px) {

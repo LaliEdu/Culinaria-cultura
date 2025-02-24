@@ -9,8 +9,12 @@ html, body{
 
 .container {
   display: flex; /* Usando flexbox */
-  flex-direction: column; /* Coloca os itens em coluna */
-  min-height: 100vh; 
+  flex-direction: column;/* Coloca os itens em coluna */
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .container a{
@@ -23,6 +27,10 @@ html, body{
     padding: 0;
     background-color: #f7f7f7; /* Cor de fundo geral */
     color: #000000; /* Cor do texto geral */
+    display: flex;
+    justify-content: center;/*Centraliza horizontalmente*/
+    align-items: center;/*Centraliza verticalmente*/
+    height: 100vh;/*faz a altura ocupar toda a tela*/
   }
 
   
@@ -70,8 +78,52 @@ html, body{
     color: #333333;
   }
 
+  /* Estilo do formulário */
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;/*centraliza itens horizontalmente*/
+}
+
+/* Estilo dos campos de entrada */
+.comment-form input, .comment-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo dos comentários */
+.comments {
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: #f1f1f1;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.comment p {
+  margin: 0;
+}
+
+.comment .author {
+  font-weight: bold;
+}
+
   /*Interatividade js*/
   .rating {
+    text-align: center;
     direction: rtl; /* Inverte a direção para que a estrela mais à direita seja a mais alta */
 }
 
@@ -133,5 +185,5 @@ html, body{
     background-color: #333; /* Cor de fundo do footer */
     color: white; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
-    padding: 5px 0; /* Espaçamento interno */
+    padding: 10px 5; /* Espaçamento interno */
 }
