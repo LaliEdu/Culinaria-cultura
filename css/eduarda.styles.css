@@ -1,4 +1,81 @@
-@charset "UTF-8";
+.caixa-receita {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  padding: 20px;
+  max-width: 600px;
+  margin: 40px auto; /* Centraliza a caixa na tela */
+  border: 2px solid #ddd; /* Borda fina */
+}
+
+/* Estilos para o título */
+.caixa-receita h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para a lista de ingredientes */
+.caixa-receita ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Estilos para o texto de modo de preparo */
+.caixa-receita p {
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Estilos para o texto de destaque (negrito) */
+.caixa-receita strong {
+  font-weight: bold;
+  color: #333;
+}
+
+footer {
+  min-height: 5px; /* Ajuste conforme necessário */
+  padding: 20px 0px; /* Ajuste do espaçamento interno */
+  text-align: center;
+  align-items: center;
+  background-color: #333; /* Cor de fundo do footer */
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 3px 0; /* Ajustei o padding para dar mais espaço */
+  width: 100%; /* Garante que o footer ocupe toda a largura da tela */
+  position: relative; /* Permite que o footer se comporte corretamente */
+  bottom: 0; /* Garante que o footer esteja na parte inferior da página */
+}
+
+
+@media screen and (max-width: 1170px) {
+    #dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dish {
+        width: 100%;
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
+} 
+
+.form-group{
+    padding: 2px;
+    margin: 0px;
+    color:rgb(0, 0, 0) ;
+    background-color: rgba(182, 182, 182, 0.37);
+    text-align: justify;
+}
 
 :root {
   --bs-primary-rgb: 13, 110, 253;
@@ -134,7 +211,7 @@ button:not(:disabled),
   height: auto;
 }
 
-.container .px-5{
+.container {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   width: 100%;

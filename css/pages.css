@@ -37,16 +37,32 @@ footer {
   min-height: 5px; /* Ajuste conforme necessário */
   background-color: #000000d3; /* Exemplo de cor de fundo */
   padding: 20px 0px; /* Ajuste do espaçamento interno */
-  text-align: center;
-  align-items: center;
+  /*text-align: center;
+  align-items: center;*/
   background-color: #333; /* Cor de fundo do footer */
-    color: white; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
-    padding: 15px 0; /* Ajustei o padding para dar mais espaço */
-    width: 100%; /* Garante que o footer ocupe toda a largura da tela */
-    position: relative; /* Permite que o footer se comporte corretamente */
-    bottom: 0; /* Garante que o footer esteja na parte inferior da página */
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 2rem 0; /* Ajusta para dar mais espaço superior e inferior */
+  width: 100%; /* Garante que o footer ocupe toda a largura da tela */
+  /*position: relative;  Permite que o footer se comporte corretamente */
+  bottom: 0; /* Garante que o footer esteja na parte inferior da página */
+  display: flex; /* Usando flexbox */
+  flex-direction: column;/* Coloca os itens em coluna */
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
 }
+
+
+footer p {
+  margin: 0; /* Remove margens do parágrafo */
+  text-align: center; /* Centraliza o texto */
+  color: #ffffff; /* Cor do texto branca */
+  font-size: 1rem; /* Tamanho da fonte */
+}
+
+
 
 
 @media screen and (max-width: 1170px) {
